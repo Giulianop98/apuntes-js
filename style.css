@@ -1,0 +1,118 @@
+*{margin: 0;
+padding: 0;
+list-style: none;}
+
+body{background-color: rgb(3, 3, 61);}
+header{background-color:  rgb(11, 26, 155) ; height: 120px ; width: 100%;   
+    display: flex;
+    flex-direction: row;
+    align-content: stretch;
+    align-items: stretch;
+    justify-content: space-around;
+}
+
+nav{ font-family: Arial, Helvetica, sans-serif;
+    margin-left: 800px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: flex-end;
+    align-items: flex-end;
+};
+
+
+
+
+.logo{width: 200px;
+height: 150px;
+margin-right: 800px;
+}
+
+ul{display: flex;
+    flex-direction: row;
+    margin-left: 150px;
+}
+    
+    
+
+
+li{list-style: none;
+margin: 20px;}
+
+a{text-decoration: none;
+color: antiquewhite;
+}
+
+ 
+/* clases /*/
+
+.search{    margin-left: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin-right: 20%;
+    }
+
+.seccionuno{color: rgb(151, 151, 151);
+font-size: 20px;
+margin-top: 5%;
+margin-bottom: 5%;
+margin-left: 5%;
+margin-right: 5%;
+display: flex;
+flex-direction: column;
+align-content: stretch;
+justify-content: flex-end;
+ text-align: center;
+ align-items: center;
+ background-color: rgba(53, 51, 51, 0.562)
+
+;
+}
+
+.secciondos{color: rgb(151, 151, 151);
+    font-size: 20px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(53, 51, 51, 0.562);
+    }
+    /*id*/
+
+    .imagen{
+        width: 500px;
+        height: 400px;
+        margin: 50px;
+        
+        
+    }
+
+/* query */
+
+@media  (max-width: 1074.99px){header {width: 130%;}
+.search {    margin-right: 70%}
+ul {    margin-right: 67%;}
+}
+
+@media (max-width: 1029.99px) {.logo {margin-left: 10px}
+.search {    margin-right: 78%}
+ul {margin-right: 72%;}
+}
+
+@media (max-width: 843.99px) {.logo {margin-left: 50vh;}
+.search {    margin-right: 98%}
+ul {margin-right: 97%;}
+}
+
+
+
+
+
+
