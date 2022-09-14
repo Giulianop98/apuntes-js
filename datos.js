@@ -382,3 +382,4 @@ switch (dia) {
         break;
 }
 //poner console.log entre case y break
+//sirve cuando tenes diferentes valores en una misma variable
