@@ -180,7 +180,7 @@ colores.forEach(function(el,index){
 
 //objetos
 
-const Giuliano ={
+/*const Giuliano ={
     nombre:'Giuliano',
     apellido:'Pimenta',
     edad:24,
@@ -199,9 +199,9 @@ const Giuliano ={
         console.log(`Hola me llamo ${this.nombre} ${this.apellido}
       y tengo ${this.edad} años y me puedes seguir en ${this.contacto.ig} en instagrams`  )
     }
-}
+}*/
 //el this sirve para concatenar valores dentro de un objeto
-console.log(Giuliano)
+/*console.log(Giuliano)
 //para acceder a un valor en especifico se usa el punto
 console.log(Giuliano.nombre)
 console.log(Giuliano.pasatiempos[2])
@@ -214,5 +214,171 @@ console.log(Object.values(Giuliano))
 //Object.value forma un arrelgo que muestra los valores
 console.log(Giuliano.hasOwnProperty('nombre'))
 console.log(Giuliano.hasOwnProperty('hobbies'))
-console.log(Giuliano.hasOwnProperty('apellido'))
+console.log(Giuliano.hasOwnProperty('apellido'))*/
 //hasOwnProperty confirma que llave esta en el objeto y que no
+
+
+//operadores
+
+/*aritmeticos +-*%/*/
+
+/*const a = 2+2;
+const b = 5%2;
+
+console.log(a)
+console.log(b)*/
+
+/* el modulo % da el resto
+el / da el cociente */
+
+/* operadores relacionales > <= != */
+
+/*console.log(8>9)
+console.log(9>8)
+console.log(8>=9)
+console.log(9>=8)
+//>= mayor o igual
+console.log(7<7)
+console.log(7<=7)*/
+//<= menor igual
+/*
+= 1 igual asignacion de variables
+== 2 iguales comparacion de valores
+=== 3 iguales comparacion de tipo de dato y de valor */
+
+/*console.log(7==7)
+console.log('7'==7)
+console.log(0==false)
+//aca solo compara valores ya no se usa
+
+console.log(7===7)
+console.log('7'===7)
+console.log(0===false)*/
+
+//aca compara tipo de dato y valor, recomendable usar
+
+/* operadores de incremento y decremento */
+
+//let i=1;
+
+//i=+ 2;
+
+//operador unario
+ //i++
+ //i--
+//console.log(i)
+
+//operadores logicos
+
+/*
+!-not:niega lo verdadero y viceversa
+
+||-Or cuando hay 2 o mas condiciones que se cumplan
+el Or va a validar
+
+&&-and cuando hay 2 o mas condiciones todas tienen que cumplirse
+en resumen sean verdaderas para que and se valide
+*/
+
+/*console.log(!true)
+console.log(!false)
+
+console.log((9===9)||('9'===9))
+console.log((9===9)&&('9'===9))
+console.log((9===9)&&(9===9))*/ //aca el and si aplica
+
+//condicionales
+
+//if-else
+
+const edad = 16
+
+if(edad > 16){
+    console.log('eres mayor de edad')
+}
+else{
+    console.log('eres menor de edad')
+}
+/*if indica si edad es mayor a 16 pero no lo es
+entonces el else se ejecuta */
+if(edad >= 18){
+    console.log('eres mayor de edad')
+}
+else{
+    console.log('eres menor de edad')
+}
+if(edad <= 16){
+    console.log('eres menor de edad')
+}
+else{
+    console.log('eres mayor de edad')
+}
+/*si pones el  = el valor se incluye en las condiciones
+a cumplir */
+
+/*dejame dormir -0hrs - 5hrs
+Buenos Dias 6am-11am
+Buenas tardes 12hrs - 18hrs
+Buenas noches 19hrs - 23hrs*/
+
+//if-else else-if
+
+const hora = 20;
+if(hora>=0 && hora <=5){
+    console.log('dejame dormir')
+}
+else if(hora>=6 && hora <=11){
+    console.log('buenos dias')
+}
+else if(hora>=12 && hora <=18){
+    console.log('buenas tardes')
+}
+else{
+    console.log('buenas noches')
+}
+
+/*if - else anidados son para 
+agregar una tercera opcion*/
+
+
+//operador ternario simplifica el if-else
+//sirve para usar una linea de codigo
+//poner (condicion) ? parte verdadera :parte falsa
+console.log('operador ternario')
+const eresMayor = (edad>= 18)
+? 'eres mayor de edad'
+:'eres menor de edad'
+console.log(eresMayor)
+
+//switch case
+
+const dia = 1
+
+switch (dia) {
+    case 0:
+        console.log('domingo')
+        
+        break;
+        case 1:
+            console.log('lunes')
+        break;
+        case 2:
+            console.log('martes')
+        break;
+        case 3:
+            console.log('miercoles')
+        break;
+        case 4:
+            console.log('jueves')
+        break;
+        case 5:
+            console.log('viernes')
+        break;
+        case 6:
+            console.log('sabado')
+        break;
+    default:
+        console.log('el dia no existe')
+        break;
+}
+//poner console.log entre case y break
