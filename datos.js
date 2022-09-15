@@ -291,7 +291,7 @@ console.log((9===9)&&(9===9))*/ //aca el and si aplica
 
 //if-else
 
-const edad = 16
+/*const edad = 16
 
 if(edad > 16){
     console.log('eres mayor de edad')
@@ -301,7 +301,7 @@ else{
 }
 /*if indica si edad es mayor a 16 pero no lo es
 entonces el else se ejecuta */
-if(edad >= 18){
+/*if(edad >= 18){
     console.log('eres mayor de edad')
 }
 else{
@@ -323,7 +323,7 @@ Buenas noches 19hrs - 23hrs*/
 
 //if-else else-if
 
-const hora = 20;
+/*const hora = 20;
 if(hora>=0 && hora <=5){
     console.log('dejame dormir')
 }
@@ -344,7 +344,7 @@ agregar una tercera opcion*/
 //operador ternario simplifica el if-else
 //sirve para usar una linea de codigo
 //poner (condicion) ? parte verdadera :parte falsa
-console.log('operador ternario')
+/*console.log('operador ternario')
 const eresMayor = (edad>= 18)
 ? 'eres mayor de edad'
 :'eres menor de edad'
@@ -379,7 +379,68 @@ switch (dia) {
         break;
     default:
         console.log('el dia no existe')
-        break;
-}
+        break;  }*/
 //poner console.log entre case y break
 //sirve cuando tenes diferentes valores en una misma variable
+
+//ciclos
+/* while (mientras) y do while mucho no se usa */
+
+//const contador = 0;
+
+/*while (contador < 10){
+    console.log(contador);
+    contador++;
+}*/
+
+/*do {
+    console.log(contador)
+    contador++
+}while (contador < 10)*/
+
+//while compara antes de ejecutar
+//do while ejecuua de una y despues cumple las condiciones
+
+//for (el que se usa)
+
+/*for(inicialicazion de variable;condicion;decremento o incremento)
+{lineas de codigo que ejecuta el for}*/
+
+for (let i = 0; i < 10; i++) {
+    console.log('for'+i)
+    
+}
+
+const numeros = [10,20,30,40,50,60,70,80,90]
+
+for(let i=0;i < numeros.length;i++){
+    console.log(numeros[i])
+}
+
+/* for in permite recorrer 
+las propiedades de un objeto primitivo*/
+
+const giuliano = {
+    nombre: 'giuliano',
+    apellido: 'pimenta',
+    edad: 24
+
+}
+
+for (const propiedad in giuliano) {
+   console.log(`Key:${propiedad}, value: ${giuliano[propiedad]}`)
+}
+
+//for off
+/*nos permite recorrer
+todos los elementos de cualquier objeto*/
+
+for (const elemento of numeros) {
+    console.log(elemento)
+}
+
+const cadena = 'hola mundo'
+
+for (const caracter of cadena) {
+    console.log(caracter)
+}
